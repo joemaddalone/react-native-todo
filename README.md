@@ -21,5 +21,6 @@ $ npm install
 $ open ToDoApp.xcodeproj
 ```
 
-> Click on the play/run button in Xcode.
-> Open the directory in the text editor of your choice.
+Click on the play/run button in Xcode.
+<br />
+Open the directory in the text editor of your choice.
