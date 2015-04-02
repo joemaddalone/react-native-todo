@@ -20,7 +20,9 @@ var options = {
 var ToDoEdit = React.createClass({
   onUpdate: function () {
     var value = this.refs.form.getValue();
-    this.props.update(value, this.props.id);
+    if(value) {
+      this.props.update(value, this.props.id);
+    }
   },
   render:function(){
     return (
