@@ -4,28 +4,30 @@ var React = require('react-native');
 var ToDoListItem = require('./ToDoListItem');
 var { ListView } = React;
 
-var ToDoList = React.createClass({
 
-  componentWillMount: function() {
-    this.dataSource = new ListView.DataSource({
-      rowHasChanged: (row1, row2) => row1 !== row2
-    });
-  },
+class ToDoList extends React.Component {
 
-  render: function() {
-    var dataSource = this.dataSource.cloneWithRows(this.props.items);
-    return (
-      <ListView
-        dataSource={dataSource}
-        renderRow={(rowData, sectionID, rowID) =>
+    componentWillMount() {
+        this.dataSource = new ListView.DataSource({
+            rowHasChanged: (row1, row2) => row1 !== row2
+        });
+    }
+
+    render() {
+        var dataSource = this.dataSource.cloneWithRows(this.props.items);
+        return (
+            <ListView
+                dataSource={dataSource}
+                renderRow={(rowData, sectionID, rowID) =>
           <ToDoListItem item={rowData}
           onPress={() => this.props.onPressItem(rowData, rowID)}
           onLongPress={() => this.props.onLongPressItem(rowData, rowID)} />
         }
-        style={styles.listView} />
-    );
-  }
+                style={styles.listView}/>
+        );
+    }
 
-});
+}
+
 
 module.exports = ToDoList;
