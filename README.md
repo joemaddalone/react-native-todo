@@ -1,9 +1,9 @@
 Example To Do List application in react-native
 ========================
 
-### Requirements, install as needed: ###
+### Requirements, install as needed:
 
-##### React Native:#####
+##### React Native:
 ```
 $ npm i -g react-native-cli
 ```
@@ -18,9 +18,7 @@ $ brew install watchman
 ```
 $ cd react-native-todo
 $ npm install
-$ open ToDoApp.xcodeproj
+$ react-native run-ios
 ```
 
-Click on the play/run button in Xcode.
-<br />
 Open the directory in the text editor of your choice.

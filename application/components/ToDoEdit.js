@@ -1,8 +1,8 @@
 'use strict';
-var styles = require('../styles/styles');
-var React = require('react-native');
-var t = require('tcomb-form-native');
-var { View, TouchableHighlight, Text } = React;
+import styles from '../styles/styles';
+import t  from 'tcomb-form-native';
+import React from 'react';
+import { View, TouchableHighlight, Text } from 'react-native';
 var Form = t.form.Form;
 
 var ToDo = t.struct({txt: t.Str, complete: t.Bool});
@@ -51,4 +51,4 @@ class ToDoEdit extends React.Component {
 }
 
 
-module.exports = ToDoEdit;
+export default ToDoEdit;

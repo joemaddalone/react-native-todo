@@ -1,12 +1,14 @@
-'use strict';
-var styles = require('../styles/styles');
-var React = require('react-native');
-var ToDoListItem = require('./ToDoListItem');
-var { ListView } = React;
-
+import styles from '../styles/styles';
+import ToDoListItem from './ToDoListItem';
+import React from 'react';
+import {
+    ListView
+} from 'react-native';
 
 class ToDoList extends React.Component {
-
+    constructor(){
+        super();
+    }
     componentWillMount() {
         this.dataSource = new ListView.DataSource({
             rowHasChanged: (row1, row2) => row1 !== row2
@@ -30,4 +32,4 @@ class ToDoList extends React.Component {
 }
 
 
-module.exports = ToDoList;
+export default ToDoList;

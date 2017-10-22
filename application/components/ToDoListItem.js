@@ -1,10 +1,13 @@
-'use strict';
-var styles = require('../styles/styles');
-var React = require('react-native');
-var { Text, View, TouchableHighlight } = React;
-
+import styles from '../styles/styles'
+import React from 'react';
+import {
+    Text, View, TouchableHighlight
+} from 'react-native';
 
 class ToDoListItem extends React.Component {
+    constructor(){
+        super();
+    }
     render() {
         var item = this.props.item;
         return (

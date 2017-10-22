@@ -1,9 +1,8 @@
-'use strict';
-var styles = require('../styles/styles');
-var React = require('react-native');
-var ToDoList = require('./ToDoList');
-var ToDoEdit = require('./ToDoEdit');
-var { Text, View, ListView, TouchableHighlight, AlertIOS } = React;
+import styles from '../styles/styles'
+import ToDoList from './ToDoList';
+import ToDoEdit from './ToDoEdit';
+import React from 'react';
+import { Text, View, ListView, TouchableHighlight, AlertIOS } from 'react-native';
 
 class ToDoContainer extends React.Component {
     constructor() {
