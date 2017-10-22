@@ -8,12 +8,12 @@ Example To Do List application in react-native
 $ npm i -g react-native-cli
 ```
 
-##### watchman:#####
+##### watchman:
 ```
 $ brew install watchman
 ```
 
-##### clone this repo: #####
+##### clone this repo:
 
 ```
 $ cd react-native-todo
